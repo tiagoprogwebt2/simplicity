@@ -47,7 +47,7 @@ a { text-decoration: none; }
 
 .topo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -254,4 +254,12 @@ td:last-child, th:last-child {
 Podemos usar even (par) ou odd (ímpar). */
 tr:nth-child(even){
     background-color: var(--cor-clara);
+}
+
+/* Classe que será aplicada em algumas partes do site visando criar limites de tamanho. */
+.limitador {
+    width: 95vw;
+    max-width: 1000px;
+    margin: auto;
+    background-color: yellow;
 }
