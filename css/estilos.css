@@ -203,10 +203,55 @@ article address {
 .conteudo-geral {
     background-color: var(--cor-intermediaria);
     padding: 0.5rem;
+
 }
 
 .conteudo-geral h2 {
     padding-left: 0;
     font-size: 1.8rem;
     border-bottom: solid 1px;
+}
+
+/* Regras para tabela */
+table {
+    border: solid 4px var(--cor-escura);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+
+    /* Remove o espaçamento
+    entre as bordas */
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+}
+
+th, td {
+    border: solid 1px var(--cor-escura);
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.5rem;
+}
+
+td { padding: 0.4rem; }
+
+/* Selecionando os segundos <td> */
+td:nth-child(2){ text-align: center; }
+
+/* Selecionando os últimos <th> e <td> */
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+/* Selecionando linhas alternadas.
+Podemos usar even (par) ou odd (ímpar). */
+tr:nth-child(even){
+    background-color: var(--cor-clara);
 }
