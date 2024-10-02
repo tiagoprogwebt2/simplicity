@@ -270,3 +270,15 @@ tr:nth-child(even){
     background-color: var(--cor-clara);
 }
 
+.galeria  { text-align: center; }
+
+.galeria img {
+    border-radius: 50%;
+    box-shadow: var(--cor-escura) 0 0 10px;
+    transform: scale(0.8) rotate(-20deg);
+    transition: 0.5s;
+}
+
+.galeria img:hover {
+    transform: scale(1);
+}
