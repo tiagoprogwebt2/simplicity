@@ -50,6 +50,7 @@ a { text-decoration: none; }
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 10;
 }
 
 /* div com a classe limitador DENTRO do topo (sub-cabeçalho):
