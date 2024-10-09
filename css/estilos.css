@@ -283,3 +283,32 @@ tr:nth-child(even){
 .galeria img:hover {
     transform: scale(1);
 }
+
+/* Regras Condicionais usando Media Queries */
+@media screen and (min-width: 600px){
+    /* Escondendo a palavra Menu */
+    .titulo-menu { display: none; }
+
+    /* Exibindo os links do menu */
+    .links-menu { display: flex; }
+
+    /* Ajustamos o tamanho do menu (nav) fazendo-o "esticar",
+    aumentando o espaçamento dentro dele. */
+    .menu { width: 60%; }
+
+    /* Forçamos cada item (li) da lista a ter largura total e,
+    com isso, redistribuir e ocupar todos os espaços dentro do menu (nav) */
+    .links-menu li { width: 100%; }
+}
+
+
+@media screen and (min-width: 1000px){
+    /* Aumentamos o tamanho base do font-size. Desta forma,
+    todos os textos do site (em especial os que usam REM), 
+    mudam de tamanho proporcionalmente. */
+    html { font-size: 20px; }
+
+    /* Aumentamos a altura da div.limitador contida
+    no topo (header) */
+    .topo .limitador { height: 100px; }
+}
